@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8336ACPZ-R7
+D Wide Bandwidth, DC-Coupled VGA
+K Variable Gain Amplifier, VGA, AGC, automatic gain control, general-purpose
+F https://www.mouser.com/datasheet/2/609/AD8336-1502168.pdf
+$ENDCMP
+#
+#End Doc Library

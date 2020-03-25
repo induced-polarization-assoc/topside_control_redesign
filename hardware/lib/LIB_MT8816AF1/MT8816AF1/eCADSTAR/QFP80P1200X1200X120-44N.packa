@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MT8816AF1"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-11-08-17:42:43)
+    (mountForm default
+        (footprintRef "QFP80P1200X1200X120-44N")
+        (spec "System")
+    )
+)

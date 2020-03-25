@@ -1,0 +1,218 @@
+EESchema Schematic File Version 4
+LIBS:ipa_cable_rx_routing_board_112319-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 34
+Title "Marine Induced Polarization Receiver (RX) Signal Routing Circuit"
+Date "2019-11-26"
+Rev "0.1"
+Comp "Induced Polarization Associates, LLC"
+Comment1 "Drafted by Joseph J. Radler"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E363402
+P 8850 4350
+AR Path="/5DDA8541/5E363402" Ref="#PWR?"  Part="1" 
+AR Path="/5DDC5F7D/5E363402" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A56F2/5E363402" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E1E7093/5E363402" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E27FFF3/5E36341A/5E363402" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E36341A/5E363402" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8850 4100 50  0001 C CNN
+F 1 "GNDD" H 8854 4195 50  0000 C CNN
+F 2 "" H 8850 4350 50  0001 C CNN
+F 3 "" H 8850 4350 50  0001 C CNN
+	1    8850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L AD8403ARZ:AD8403ARZ1 DPOT?
+U 2 1 5E363403
+P 6900 3400
+AR Path="/5DDA8541/5E363403" Ref="DPOT?"  Part="2" 
+AR Path="/5DDC5F7D/5E363403" Ref="DPOT?"  Part="2" 
+AR Path="/5E0A56F2/5E363403" Ref="DPOT?"  Part="2" 
+AR Path="/5E1F6495/5E1F885A/5E1E7093/5E363403" Ref="DPOT?"  Part="2" 
+AR Path="/5E1F6495/5E27FFF3/5E36341A/5E363403" Ref="DPOT1501"  Part="2" 
+AR Path="/5E1F6495/5E1F885A/5E36341A/5E363403" Ref="DPOT701"  Part="2" 
+F 0 "DPOT701" H 7650 3200 60  0000 C CNN
+F 1 "AD8403ARZ1" H 7900 2200 60  0000 C CNN
+F 2 "RW_24" H 7335 2240 60  0001 C CNN
+F 3 "" H 6900 3400 60  0000 C CNN
+	2    6900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3800 8850 3800
+Wire Wire Line
+	8850 3800 8850 4350
+Wire Wire Line
+	8500 3700 9250 3700
+Wire Wire Line
+	9250 3700 9250 4150
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E363405
+P 9250 4150
+AR Path="/5DDA8541/5E363405" Ref="#PWR?"  Part="1" 
+AR Path="/5DDC5F7D/5E363405" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A56F2/5E363405" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E1E7093/5E363405" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E27FFF3/5E36341A/5E363405" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E36341A/5E363405" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9250 3900 50  0001 C CNN
+F 1 "GNDA" H 9255 3977 50  0000 C CNN
+F 2 "" H 9250 4150 50  0001 C CNN
+F 3 "" H 9250 4150 50  0001 C CNN
+	1    9250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3400 9250 3400
+Wire Wire Line
+	9250 3400 9250 3500
+Connection ~ 9250 3700
+Wire Wire Line
+	8500 3500 9250 3500
+Connection ~ 9250 3500
+Wire Wire Line
+	9250 3500 9250 3600
+Wire Wire Line
+	8500 3600 9250 3600
+Connection ~ 9250 3600
+Wire Wire Line
+	9250 3600 9250 3700
+Wire Wire Line
+	6900 3400 6400 3400
+Text Notes 5050 5250 0    50   ~ 0
+1KOHM DIGITAL POTENTIOMETER (4 AGC PER IC)
+Wire Wire Line
+	5050 3800 5050 3700
+Connection ~ 5050 3800
+Wire Wire Line
+	4200 3800 5050 3800
+Wire Wire Line
+	4200 3700 5050 3700
+Wire Wire Line
+	5050 3700 5050 3600
+Connection ~ 5050 3700
+Wire Wire Line
+	5050 3600 5050 3500
+Connection ~ 5050 3600
+Wire Wire Line
+	4200 3600 5050 3600
+Wire Wire Line
+	5050 3500 4200 3500
+Wire Wire Line
+	5050 4100 5050 3800
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E363406
+P 5050 4100
+AR Path="/5DDA8541/5E363406" Ref="#PWR?"  Part="1" 
+AR Path="/5DDC5F7D/5E363406" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A56F2/5E363406" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E1E7093/5E363406" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E27FFF3/5E36341A/5E363406" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E36341A/5E363406" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 3850 50  0001 C CNN
+F 1 "GNDA" H 5055 3927 50  0000 C CNN
+F 2 "" H 5050 4100 50  0001 C CNN
+F 3 "" H 5050 4100 50  0001 C CNN
+	1    5050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2700 4350 3100
+Wire Wire Line
+	4200 2700 4200 3000
+Wire Wire Line
+	4350 3100 4200 3100
+Wire Wire Line
+	4500 3200 4200 3200
+Wire Wire Line
+	4500 2700 4500 3200
+Wire Wire Line
+	4650 3300 4650 2700
+Wire Wire Line
+	4200 3300 4650 3300
+Wire Wire Line
+	4650 4000 4650 4550
+Wire Wire Line
+	4200 4000 4650 4000
+Wire Wire Line
+	4500 4100 4200 4100
+Wire Wire Line
+	4500 4550 4500 4100
+Wire Wire Line
+	4350 4200 4350 4550
+Wire Wire Line
+	4200 4200 4350 4200
+Wire Wire Line
+	4200 4300 4200 4550
+Wire Wire Line
+	2600 3900 2600 4200
+Wire Wire Line
+	2600 3050 2600 3400
+Wire Wire Line
+	2600 3800 2200 3800
+Wire Wire Line
+	2600 3700 2200 3700
+Wire Wire Line
+	2600 3600 2200 3600
+Wire Wire Line
+	2600 3500 2200 3500
+$Comp
+L AD8403ARZ:AD8403ARZ1 DPOT?
+U 1 1 5E363404
+P 2600 3400
+AR Path="/5DDA8541/5E363404" Ref="DPOT?"  Part="1" 
+AR Path="/5DDC5F7D/5E363404" Ref="DPOT?"  Part="1" 
+AR Path="/5E0A56F2/5E363404" Ref="DPOT?"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E1E7093/5E363404" Ref="DPOT?"  Part="1" 
+AR Path="/5E1F6495/5E27FFF3/5E36341A/5E363404" Ref="DPOT1501"  Part="1" 
+AR Path="/5E1F6495/5E1F885A/5E36341A/5E363404" Ref="DPOT701"  Part="1" 
+F 0 "DPOT701" H 3400 3150 60  0000 C CNN
+F 1 "AD8403ARZ1" H 3650 2250 60  0000 C CNN
+F 2 "RW_24" H 3035 2240 60  0001 C CNN
+F 3 "" H 2600 3400 60  0000 C CNN
+	1    2600 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4200 4550 3    50   Input ~ 0
+AGC4POT_W
+Text HLabel 4350 4550 3    50   Input ~ 0
+AGC3POT_W
+Text HLabel 4500 4550 3    50   Input ~ 0
+AGC2POT_W
+Text HLabel 4650 4550 3    50   Input ~ 0
+AGC1POT_W
+Text HLabel 4650 2700 1    50   Input ~ 0
+AGC4POT_A
+Text HLabel 4500 2700 1    50   Input ~ 0
+AGC3POT_A
+Text HLabel 4350 2700 1    50   Input ~ 0
+AGC2POT_A
+Text HLabel 4200 2700 1    50   Input ~ 0
+AGC1POT_A
+Text GLabel 2200 3500 0    50   Input ~ 0
+POT1CS
+Text GLabel 2200 3600 0    50   Input ~ 0
+POT1RS
+Text GLabel 2200 3700 0    50   Input ~ 0
+POT1SDI
+Text GLabel 2200 3800 0    50   Input ~ 0
+POT1SDO
+Text GLabel 2600 3050 1    50   Input ~ 0
+SYSCLK
+Text GLabel 2600 4200 3    50   Input ~ 0
+POT1SHDN
+Text GLabel 6400 3400 0    50   Input ~ 0
+SYSCLK
+$EndSCHEMATC

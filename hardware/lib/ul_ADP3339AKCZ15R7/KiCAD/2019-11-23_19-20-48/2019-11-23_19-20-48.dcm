@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADP3339AKCZ-1.5-R7
+D High Accuracy, Ultralow IQ, 1.5 A,
+K Regulator_Linear, LDO. low_dropout, regulator, high accuracy, anyCAP, Analog Devices
+F https://www.mouser.com/datasheet/2/609/ADP3339-1503402.pdf
+$ENDCMP
+#
+#End Doc Library

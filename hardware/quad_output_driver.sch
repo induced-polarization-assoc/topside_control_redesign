@@ -1,0 +1,346 @@
+EESchema Schematic File Version 4
+LIBS:ipa_cable_rx_routing_board_112319-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 16
+Title "Marine Induced Polarization Receiver (RX) Signal Routing Circuit"
+Date "2019-11-26"
+Rev "0.1"
+Comp "Induced Polarization Associates, LLC"
+Comment1 "Drafted by Joseph J. Radler"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4150 1800 0    50   Input ~ 0
+BUFFER_IN_A
+Text HLabel 4200 2750 0    50   Input ~ 0
+BUFFER_IN_B
+Text HLabel 4200 3750 0    50   Input ~ 0
+BUFFER_IN_C
+Text HLabel 4200 4850 0    50   Input ~ 0
+BUFFER_IN_D
+Text HLabel 7100 3350 2    50   Output ~ 0
+BUFFERED_OUT_A
+Text HLabel 7100 3450 2    50   Output ~ 0
+BUFFERED_OUT_B
+Text HLabel 7100 3550 2    50   Output ~ 0
+BUFFERED_OUT_C
+Text HLabel 7100 3650 2    50   Output ~ 0
+BUFFERED_OUT_D
+Wire Wire Line
+	9050 2850 9550 2850
+Connection ~ 9050 2850
+Wire Wire Line
+	9050 2850 9050 2750
+Wire Wire Line
+	9050 3100 9550 3100
+Wire Wire Line
+	9050 3100 9050 2850
+Wire Wire Line
+	10300 2850 10300 3100
+Connection ~ 10300 3100
+Wire Wire Line
+	10300 3100 10300 3200
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DE11BF2
+P 10300 3200
+AR Path="/5E1FF6A4/5DE0DE0F/5DE11BF2" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE11BF2" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5DE11BF2" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5DE11BF2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10300 2950 50  0001 C CNN
+F 1 "GNDA" H 10305 3027 50  0000 C CNN
+F 2 "" H 10300 3200 50  0001 C CNN
+F 3 "" H 10300 3200 50  0001 C CNN
+	1    10300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DE124C3
+P 8400 4850
+AR Path="/5E1FF6A4/5DE0DE0F/5DE124C3" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE124C3" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5DE124C3" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5DE124C3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8400 4600 50  0001 C CNN
+F 1 "GNDA" H 8405 4677 50  0000 C CNN
+F 2 "" H 8400 4850 50  0001 C CNN
+F 3 "" H 8400 4850 50  0001 C CNN
+	1    8400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4850 8400 4450
+Wire Wire Line
+	8400 4100 8650 4100
+Connection ~ 8400 4450
+Wire Wire Line
+	8400 4450 8400 4100
+$Comp
+L Device:C_Small C24
+U 1 1 5DE14B5D
+P 8750 4100
+AR Path="/5E1FF6A4/5DE0DE0F/5DE14B5D" Ref="C24"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE14B5D" Ref="C28"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5DE14B5D" Ref="C32"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5DE14B5D" Ref="C36"  Part="1" 
+F 0 "C36" V 8800 4200 50  0000 C CNN
+F 1 "0.1uF" V 8612 4100 50  0000 C CNN
+F 2 "" H 8750 4100 50  0001 C CNN
+F 3 "~" H 8750 4100 50  0001 C CNN
+	1    8750 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C27
+U 1 1 5DE15A38
+P 9650 3100
+AR Path="/5E1FF6A4/5DE0DE0F/5DE15A38" Ref="C27"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE15A38" Ref="C31"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5DE15A38" Ref="C35"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5DE15A38" Ref="C39"  Part="1" 
+F 0 "C39" V 9800 3100 50  0000 C CNN
+F 1 "10uF" V 9750 2950 50  0000 C CNN
+F 2 "" H 9650 3100 50  0001 C CNN
+F 3 "~" H 9650 3100 50  0001 C CNN
+	1    9650 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 3100 10300 3100
+$Comp
+L Device:CP_Small C26
+U 1 1 5DE1673A
+P 9650 2850
+AR Path="/5E1FF6A4/5DE0DE0F/5DE1673A" Ref="C26"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE1673A" Ref="C30"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5DE1673A" Ref="C34"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5DE1673A" Ref="C38"  Part="1" 
+F 0 "C38" V 9600 2750 50  0000 C CNN
+F 1 "0.1uF" V 9784 2850 50  0000 C CNN
+F 2 "" H 9650 2850 50  0001 C CNN
+F 3 "~" H 9650 2850 50  0001 C CNN
+	1    9650 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9750 2850 10300 2850
+$Comp
+L Device:CP_Small C25
+U 1 1 5DE192E9
+P 8750 4450
+AR Path="/5E1FF6A4/5DE0DE0F/5DE192E9" Ref="C25"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE192E9" Ref="C29"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5DE192E9" Ref="C33"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5DE192E9" Ref="C37"  Part="1" 
+F 0 "C37" V 8700 4300 50  0000 C CNN
+F 1 "10uF" V 8650 4600 50  0000 C CNN
+F 2 "" H 8750 4450 50  0001 C CNN
+F 3 "~" H 8750 4450 50  0001 C CNN
+	1    8750 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 4450 8400 4450
+$Comp
+L Amplifier_Operational:ADA4807-4 U7
+U 1 1 5DE1BEA7
+P 5200 1900
+AR Path="/5E1FF6A4/5DE0DE0F/5DE1BEA7" Ref="U7"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE1BEA7" Ref="U8"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5DE1BEA7" Ref="U9"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5DE1BEA7" Ref="U10"  Part="1" 
+F 0 "U10" H 5200 2267 50  0000 C CNN
+F 1 "ADA4807-4" H 5200 2176 50  0000 C CNN
+F 2 "" H 5150 2000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5250 2100 50  0001 C CNN
+	1    5200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U7
+U 2 1 5DE2ABAB
+P 5200 2850
+AR Path="/5E1FF6A4/5DE0DE0F/5DE2ABAB" Ref="U7"  Part="2" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE2ABAB" Ref="U8"  Part="2" 
+AR Path="/5E1FF6A4/5DE6106D/5DE2ABAB" Ref="U9"  Part="2" 
+AR Path="/5E1FF6A4/5DE61385/5DE2ABAB" Ref="U10"  Part="2" 
+F 0 "U10" H 5200 3217 50  0000 C CNN
+F 1 "ADA4807-4" H 5200 3126 50  0000 C CNN
+F 2 "" H 5150 2950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5250 3050 50  0001 C CNN
+	2    5200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U7
+U 3 1 5DE2E091
+P 5200 3850
+AR Path="/5E1FF6A4/5DE0DE0F/5DE2E091" Ref="U7"  Part="3" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE2E091" Ref="U8"  Part="3" 
+AR Path="/5E1FF6A4/5DE6106D/5DE2E091" Ref="U9"  Part="3" 
+AR Path="/5E1FF6A4/5DE61385/5DE2E091" Ref="U10"  Part="3" 
+F 0 "U10" H 5200 4217 50  0000 C CNN
+F 1 "ADA4807-4" H 5200 4126 50  0000 C CNN
+F 2 "" H 5150 3950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5250 4050 50  0001 C CNN
+	3    5200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U7
+U 4 1 5DE2FE54
+P 5150 4950
+AR Path="/5E1FF6A4/5DE0DE0F/5DE2FE54" Ref="U7"  Part="4" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE2FE54" Ref="U8"  Part="4" 
+AR Path="/5E1FF6A4/5DE6106D/5DE2FE54" Ref="U9"  Part="4" 
+AR Path="/5E1FF6A4/5DE61385/5DE2FE54" Ref="U10"  Part="4" 
+F 0 "U10" H 5150 5317 50  0000 C CNN
+F 1 "ADA4807-4" H 5150 5226 50  0000 C CNN
+F 2 "" H 5100 5050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5200 5150 50  0001 C CNN
+	4    5150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U7
+U 5 1 5DE31358
+P 9150 3750
+AR Path="/5E1FF6A4/5DE0DE0F/5DE31358" Ref="U7"  Part="5" 
+AR Path="/5E1FF6A4/5DE60F5A/5DE31358" Ref="U8"  Part="5" 
+AR Path="/5E1FF6A4/5DE6106D/5DE31358" Ref="U9"  Part="5" 
+AR Path="/5E1FF6A4/5DE61385/5DE31358" Ref="U10"  Part="5" 
+F 0 "U10" H 9108 3796 50  0000 L CNN
+F 1 "ADA4807-4" H 9108 3705 50  0000 L CNN
+F 2 "" H 9100 3850 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9200 3950 50  0001 C CNN
+	5    9150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3450 9050 3100
+Wire Wire Line
+	9050 4050 9050 4100
+Connection ~ 9050 3100
+Wire Wire Line
+	4900 2000 4700 2000
+Wire Wire Line
+	4700 2000 4700 2200
+Wire Wire Line
+	4700 2200 5600 2200
+Wire Wire Line
+	5600 2200 5600 1900
+Wire Wire Line
+	5600 1900 5500 1900
+Wire Wire Line
+	4900 2950 4700 2950
+Wire Wire Line
+	4700 2950 4700 3150
+Wire Wire Line
+	4700 3150 5600 3150
+Wire Wire Line
+	5600 3150 5600 2850
+Wire Wire Line
+	5600 2850 5500 2850
+Wire Wire Line
+	4900 3950 4700 3950
+Wire Wire Line
+	4700 3950 4700 4150
+Wire Wire Line
+	4700 4150 5600 4150
+Wire Wire Line
+	5600 4150 5600 3850
+Wire Wire Line
+	5600 3850 5500 3850
+Wire Wire Line
+	4850 5050 4700 5050
+Wire Wire Line
+	4700 5050 4700 5300
+Wire Wire Line
+	4700 5300 5550 5300
+Wire Wire Line
+	5550 5300 5550 4950
+Wire Wire Line
+	5550 4950 5450 4950
+Wire Wire Line
+	4900 1800 4150 1800
+Wire Wire Line
+	4200 2750 4900 2750
+Wire Wire Line
+	4200 3750 4900 3750
+Wire Wire Line
+	4850 4850 4200 4850
+Wire Wire Line
+	7100 3350 6700 3350
+Wire Wire Line
+	6700 3350 6700 1900
+Wire Wire Line
+	6700 1900 5600 1900
+Connection ~ 5600 1900
+Wire Wire Line
+	5600 2850 6350 2850
+Wire Wire Line
+	6350 2850 6350 3450
+Wire Wire Line
+	6350 3450 7100 3450
+Connection ~ 5600 2850
+Wire Wire Line
+	7100 3550 6350 3550
+Wire Wire Line
+	6350 3550 6350 3850
+Wire Wire Line
+	6350 3850 5600 3850
+Connection ~ 5600 3850
+Wire Wire Line
+	5550 4950 6700 4950
+Wire Wire Line
+	6700 4950 6700 3650
+Wire Wire Line
+	6700 3650 7100 3650
+Connection ~ 5550 4950
+Wire Wire Line
+	8850 4100 9050 4100
+Connection ~ 9050 4100
+Wire Wire Line
+	9050 4100 9050 4450
+Wire Wire Line
+	8850 4450 9050 4450
+Connection ~ 9050 4450
+Wire Wire Line
+	9050 4450 9050 4900
+$Comp
+L power:-12VA #PWR?
+U 1 1 5F26ABD6
+P 9050 4900
+AR Path="/5E1FF6A4/5DE0DE0F/5F26ABD6" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5F26ABD6" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5F26ABD6" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5F26ABD6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9050 4750 50  0001 C CNN
+F 1 "-12VA" H 9065 5073 50  0000 C CNN
+F 2 "" H 9050 4900 50  0001 C CNN
+F 3 "" H 9050 4900 50  0001 C CNN
+	1    9050 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12VA #PWR?
+U 1 1 5F26BED9
+P 9050 2750
+AR Path="/5E1FF6A4/5DE0DE0F/5F26BED9" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/5F26BED9" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/5F26BED9" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/5F26BED9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9050 2600 50  0001 C CNN
+F 1 "+12VA" H 9065 2923 50  0000 C CNN
+F 2 "" H 9050 2750 50  0001 C CNN
+F 3 "" H 9050 2750 50  0001 C CNN
+	1    9050 2750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

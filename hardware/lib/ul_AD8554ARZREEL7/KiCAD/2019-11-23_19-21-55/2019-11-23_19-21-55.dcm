@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8554ARZ-REEL7
+D Quad, low noise, general purpose, op amp
+K operational amplifier, analog, quad
+F https://www.mouser.com/datasheet/2/609/AD8551_8552_8554-877793.pdf
+$ENDCMP
+#
+#End Doc Library

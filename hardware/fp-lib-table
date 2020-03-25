@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name meanwell_ska15b_xxx)(type KiCad)(uri ${KIPRJMOD}/lib/LIB_MEANWELL_SKA15B/meanwell_ska15b_xxx.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name AD736ARZ)(type Legacy)(uri ${KIPRJMOD}/lib/ul_AD736ARZ/KiCAD/2019-11-23_19-23-26/2019-11-23_19-23-26.lib)(options "")(descr ""))
+  (lib (name AD8336A)(type Legacy)(uri ${KIPRJMOD}/lib/ul_AD8336ACPZR7/KiCAD/2019-11-23_19-19-38/2019-11-23_19-19-38.lib)(options "")(descr ""))
+  (lib (name AD8554ARZ)(type Legacy)(uri ${KIPRJMOD}/lib/ul_AD8554ARZREEL7/KiCAD/2019-11-23_19-21-55/2019-11-23_19-21-55.lib)(options "")(descr ""))
+  (lib (name AD8694ARUZ)(type Legacy)(uri ${KIPRJMOD}/lib/ul_AD8694ARUZ/KiCAD/2019-11-23_19-25-41/2019-11-23_19-25-41.lib)(options "")(descr ""))
+  (lib (name ADP3339AKCZ15R7)(type Legacy)(uri ${KIPRJMOD}/lib/ul_ADP3339AKCZ15R7/KiCAD/2019-11-23_19-20-48/2019-11-23_19-20-48.lib)(options "")(descr ""))
+  (lib (name AD8403ARZ)(type Legacy)(uri ${KIPRJMOD}/lib/ul_AD8403ARZ1/KiCAD/2019-11-23_20-12-40/2019-11-23_20-12-40.lib)(options "")(descr ""))
+  (lib (name MT8816AF1)(type Legacy)(uri ${KIPRJMOD}/lib/LIB_MT8816AF1/MT8816AF1/KiCad/MT8816AF1.lib)(options "")(descr ""))
+  (lib (name ipa_cable_rx_routing_board_112319-rescue)(type Legacy)(uri ${KIPRJMOD}/ipa_cable_rx_routing_board_112319-rescue.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KIPRJMOD}/lib/power.lib)(options "")(descr ""))
+)

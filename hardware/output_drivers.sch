@@ -1,0 +1,1465 @@
+EESchema Schematic File Version 4
+LIBS:ipa_cable_rx_routing_board_112319-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 12
+Title "Marine Induced Polarization Receiver (RX) Signal Routing Circuit"
+Date "2019-11-26"
+Rev "0.1"
+Comp "Induced Polarization Associates, LLC"
+Comment1 "Drafted by Joseph J. Radler"
+Comment2 " usual DC bypass capacitors for noise mitigation."
+Comment3 "Output buffering circuitry consisting of four quad operational amplifier packages with the"
+Comment4 ""
+$EndDescr
+Text HLabel 6750 6250 2    50   Output ~ 0
+CH8N_OUT
+Text HLabel 6750 6100 2    50   Output ~ 0
+CH8P_OUT
+Text HLabel 6750 5950 2    50   Output ~ 0
+CH7N_OUT
+Text HLabel 6750 5800 2    50   Output ~ 0
+CH7P_OUT
+Text HLabel 3450 6200 2    50   Output ~ 0
+CH6N_OUT
+Text HLabel 3450 6050 2    50   Output ~ 0
+CH6P_OUT
+Text HLabel 3450 5900 2    50   Output ~ 0
+CH5N_OUT
+Text HLabel 3450 5750 2    50   Output ~ 0
+CH5P_OUT
+Text HLabel 6750 2450 2    50   Output ~ 0
+CH4N_OUT
+Text HLabel 6750 2300 2    50   Output ~ 0
+CH4P_OUT
+Text HLabel 6750 2150 2    50   Output ~ 0
+CH3N_OUT
+Text HLabel 6750 2000 2    50   Output ~ 0
+CH3P_OUT
+Text HLabel 3450 2450 2    50   Output ~ 0
+CH2N_OUT
+Text HLabel 3450 2300 2    50   Output ~ 0
+CH2P_OUT
+Text HLabel 3450 2150 2    50   Output ~ 0
+CH1N_OUT
+Text HLabel 3450 2000 2    50   Output ~ 0
+CH1P_OUT
+Text HLabel 4500 6250 0    50   Input ~ 0
+CH8N_IN
+Text HLabel 4500 6100 0    50   Input ~ 0
+CH8P_IN
+Text HLabel 4500 5950 0    50   Input ~ 0
+CH7N_IN
+Text HLabel 4500 5800 0    50   Input ~ 0
+CH7P_IN
+Text HLabel 1200 6250 0    50   Input ~ 0
+CH6N_IN
+Text HLabel 1200 6100 0    50   Input ~ 0
+CH6P_IN
+Text HLabel 1200 5950 0    50   Input ~ 0
+CH5N_IN
+Text HLabel 1200 5800 0    50   Input ~ 0
+CH5P_IN
+Text HLabel 4450 2450 0    50   Input ~ 0
+CH4N_IN
+Text HLabel 4450 2300 0    50   Input ~ 0
+CH4P_IN
+Text HLabel 4450 2150 0    50   Input ~ 0
+CH3N_IN
+Text HLabel 4450 2000 0    50   Input ~ 0
+CH3P_IN
+Text HLabel 1100 2350 0    50   Input ~ 0
+CH2N_IN
+Text HLabel 1100 2200 0    50   Input ~ 0
+CH2P_IN
+Text HLabel 1100 2050 0    50   Input ~ 0
+CH1N_IN
+Text HLabel 1100 1900 0    50   Input ~ 0
+CH1P_IN
+Wire Wire Line
+	7800 950  8050 950 
+Connection ~ 7800 950 
+Wire Wire Line
+	7800 950  7800 850 
+Wire Wire Line
+	7800 1200 8050 1200
+Wire Wire Line
+	7800 1200 7800 950 
+Wire Wire Line
+	8450 950  8450 1200
+Connection ~ 8450 1200
+$Comp
+L Device:C_Small C?
+U 1 1 60AFFCEA
+P 8150 1200
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFCEA" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFCEA" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFCEA" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFCEA" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFCEA" Ref="C1202"  Part="1" 
+F 0 "C1202" V 8300 1200 50  0000 C CNN
+F 1 "10uF" V 8250 1050 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8150 1200 50  0001 C CNN
+F 3 "~" H 8150 1200 50  0001 C CNN
+	1    8150 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 1200 8450 1200
+$Comp
+L Device:CP_Small C?
+U 1 1 60AFFCF1
+P 8150 950
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFCF1" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFCF1" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFCF1" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFCF1" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFCF1" Ref="C1201"  Part="1" 
+F 0 "C1201" V 8100 850 50  0000 C CNN
+F 1 "0.1uF" V 8284 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8150 950 50  0001 C CNN
+F 3 "~" H 8150 950 50  0001 C CNN
+	1    8150 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8250 950  8450 950 
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 1 1 60AFFCFF
+P 2400 1100
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFCFF" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFCFF" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFCFF" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFCFF" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFCFF" Ref="U1201"  Part="1" 
+F 0 "U1201" H 2350 1100 50  0000 C CNN
+F 1 "ADA4807-4" H 2550 900 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2350 1200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2450 1300 50  0001 C CNN
+	1    2400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 2 1 60AFFD05
+P 2400 1850
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFD05" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFD05" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFD05" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE61385/60AFFD05" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/60AFFD05" Ref="U1201"  Part="2" 
+F 0 "U1201" H 2350 1850 50  0000 C CNN
+F 1 "ADA4807-4" H 2550 1650 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2350 1950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2450 2050 50  0001 C CNN
+	2    2400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 3 1 60AFFD0B
+P 2400 2550
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFD0B" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFD0B" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFD0B" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE61385/60AFFD0B" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/60AFFD0B" Ref="U1201"  Part="3" 
+F 0 "U1201" H 2350 2550 50  0000 C CNN
+F 1 "ADA4807-4" H 2500 2350 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2350 2650 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2450 2750 50  0001 C CNN
+	3    2400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 4 1 60AFFD11
+P 2400 3300
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFD11" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFD11" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFD11" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE61385/60AFFD11" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/60AFFD11" Ref="U1201"  Part="4" 
+F 0 "U1201" H 2350 3300 50  0000 C CNN
+F 1 "ADA4807-4" H 2400 3576 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2350 3400 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2450 3500 50  0001 C CNN
+	4    2400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 5 1 60AFFD17
+P 7900 1850
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFD17" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFD17" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFD17" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE61385/60AFFD17" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/60AFFD17" Ref="U1201"  Part="5" 
+F 0 "U1201" H 7858 1896 50  0000 L CNN
+F 1 "ADA4807-4" H 7858 1805 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7850 1950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 7950 2050 50  0001 C CNN
+	5    7900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1550 7800 1200
+Connection ~ 7800 1200
+Wire Wire Line
+	2100 1200 1900 1200
+Wire Wire Line
+	1900 1200 1900 1400
+Wire Wire Line
+	1900 1400 2800 1400
+Wire Wire Line
+	2800 1400 2800 1100
+Wire Wire Line
+	2800 1100 2700 1100
+Wire Wire Line
+	2100 1950 1900 1950
+Wire Wire Line
+	1900 1950 1900 2150
+Wire Wire Line
+	1900 2150 2800 2150
+Wire Wire Line
+	2800 2150 2800 1850
+Wire Wire Line
+	2800 1850 2700 1850
+Wire Wire Line
+	2100 2650 1900 2650
+Wire Wire Line
+	1900 2650 1900 2850
+Wire Wire Line
+	1900 2850 2800 2850
+Wire Wire Line
+	2800 2850 2800 2550
+Wire Wire Line
+	2800 2550 2700 2550
+Wire Wire Line
+	2100 3400 1950 3400
+Wire Wire Line
+	1950 3400 1950 3650
+Wire Wire Line
+	1950 3650 2800 3650
+Wire Wire Line
+	2800 3650 2800 3300
+Wire Wire Line
+	2800 3300 2700 3300
+$Comp
+L power:-12VA #PWR?
+U 1 1 60AFFD4E
+P 7800 3000
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFD4E" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFD4E" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFD4E" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFD4E" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFD4E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7800 2850 50  0001 C CNN
+F 1 "-12VA" H 7815 3173 50  0000 C CNN
+F 2 "" H 7800 3000 50  0001 C CNN
+F 3 "" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12VA #PWR?
+U 1 1 60AFFD54
+P 7800 850
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFD54" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFD54" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFD54" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFD54" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFD54" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7800 700 50  0001 C CNN
+F 1 "+12VA" H 7815 1023 50  0000 C CNN
+F 2 "" H 7800 850 50  0001 C CNN
+F 3 "" H 7800 850 50  0001 C CNN
+	1    7800 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2600 7800 2600
+Wire Wire Line
+	8050 2250 7800 2250
+Wire Wire Line
+	8250 2600 8450 2600
+$Comp
+L Device:CP_Small C?
+U 1 1 60AFFCF8
+P 8150 2600
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFCF8" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFCF8" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFCF8" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFCF8" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFCF8" Ref="C1204"  Part="1" 
+F 0 "C1204" V 8100 2450 50  0000 C CNN
+F 1 "10uF" V 8050 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8150 2600 50  0001 C CNN
+F 3 "~" H 8150 2600 50  0001 C CNN
+	1    8150 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60AFFCE4
+P 8150 2250
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFCE4" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFCE4" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFCE4" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFCE4" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFCE4" Ref="C1203"  Part="1" 
+F 0 "C1203" V 8200 2350 50  0000 C CNN
+F 1 "0.1uF" V 8012 2250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8150 2250 50  0001 C CNN
+F 3 "~" H 8150 2250 50  0001 C CNN
+	1    8150 2250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8450 2600 8450 2250
+Connection ~ 8450 2600
+Wire Wire Line
+	8450 2250 8250 2250
+Wire Wire Line
+	8450 3000 8450 2600
+$Comp
+L power:GNDA #PWR?
+U 1 1 60AFFCDA
+P 8450 3000
+AR Path="/5E1FF6A4/5DE0DE0F/60AFFCDA" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60AFFCDA" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60AFFCDA" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60AFFCDA" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60AFFCDA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 2750 50  0001 C CNN
+F 1 "GNDA" H 8455 2827 50  0000 C CNN
+F 2 "" H 8450 3000 50  0001 C CNN
+F 3 "" H 8450 3000 50  0001 C CNN
+	1    8450 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2150 7800 2250
+Connection ~ 7800 2250
+Wire Wire Line
+	7800 2250 7800 2600
+Connection ~ 7800 2600
+Wire Wire Line
+	7800 2600 7800 3000
+Wire Wire Line
+	8450 1200 8450 2250
+Connection ~ 8450 2250
+Wire Notes Line
+	8650 550  7550 550 
+Wire Notes Line
+	7550 550  7550 3450
+Wire Notes Line
+	7550 3450 8650 3450
+Wire Notes Line
+	8650 550  8650 3450
+Wire Notes Line
+	1200 700  3300 700 
+Wire Notes Line
+	3300 700  3300 3750
+Wire Notes Line
+	3300 3750 1200 3750
+Wire Notes Line
+	1200 3750 1200 700 
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 1 1 60B6B8F2
+P 2450 4900
+AR Path="/5E1FF6A4/5DE0DE0F/60B6B8F2" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60B6B8F2" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60B6B8F2" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60B6B8F2" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/60B6B8F2" Ref="U1202"  Part="1" 
+F 0 "U1202" H 2350 4900 50  0000 C CNN
+F 1 "ADA4807-4" H 2450 5176 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2400 5000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2500 5100 50  0001 C CNN
+	1    2450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 2 1 60B6B8FC
+P 2450 5650
+AR Path="/5E1FF6A4/5DE0DE0F/60B6B8FC" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE60F5A/60B6B8FC" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE6106D/60B6B8FC" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE61385/60B6B8FC" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/60B6B8FC" Ref="U1202"  Part="2" 
+F 0 "U1202" H 2400 5650 50  0000 C CNN
+F 1 "ADA4807-4" H 2450 5926 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2400 5750 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2500 5850 50  0001 C CNN
+	2    2450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 3 1 60B6B906
+P 2450 6350
+AR Path="/5E1FF6A4/5DE0DE0F/60B6B906" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE60F5A/60B6B906" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE6106D/60B6B906" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE61385/60B6B906" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/60B6B906" Ref="U1202"  Part="3" 
+F 0 "U1202" H 2350 6350 50  0000 C CNN
+F 1 "ADA4807-4" H 2450 6626 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2400 6450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2500 6550 50  0001 C CNN
+	3    2450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 4 1 60B6B910
+P 2450 7100
+AR Path="/5E1FF6A4/5DE0DE0F/60B6B910" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE60F5A/60B6B910" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE6106D/60B6B910" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE61385/60B6B910" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/60B6B910" Ref="U1202"  Part="4" 
+F 0 "U1202" H 2450 7100 50  0000 C CNN
+F 1 "ADA4807-4" H 2450 7376 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2400 7200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 2500 7300 50  0001 C CNN
+	4    2450 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5000 1950 5000
+Wire Wire Line
+	1950 5000 1950 5200
+Wire Wire Line
+	1950 5200 2850 5200
+Wire Wire Line
+	2850 5200 2850 4900
+Wire Wire Line
+	2850 4900 2750 4900
+Wire Wire Line
+	2150 5750 1950 5750
+Wire Wire Line
+	1950 5750 1950 5950
+Wire Wire Line
+	1950 5950 2850 5950
+Wire Wire Line
+	2850 5650 2750 5650
+Wire Wire Line
+	2150 6450 1950 6450
+Wire Wire Line
+	1950 6450 1950 6650
+Wire Wire Line
+	1950 6650 2850 6650
+Wire Wire Line
+	2850 6650 2850 6350
+Wire Wire Line
+	2850 6350 2750 6350
+Wire Wire Line
+	2150 7200 2000 7200
+Wire Wire Line
+	2000 7200 2000 7450
+Wire Wire Line
+	2000 7450 2850 7450
+Wire Wire Line
+	2850 7450 2850 7100
+Wire Wire Line
+	2850 7100 2750 7100
+Wire Notes Line
+	1250 4500 3350 4500
+Wire Notes Line
+	3300 4500 3300 7550
+Wire Notes Line
+	3350 7550 1250 7550
+Wire Notes Line
+	1250 7550 1250 4500
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 1 1 60B7EF73
+P 5750 1100
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EF73" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EF73" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EF73" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60B7EF73" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/60B7EF73" Ref="U1203"  Part="1" 
+F 0 "U1203" H 5700 1100 50  0000 C CNN
+F 1 "ADA4807-4" H 5900 900 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 1200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 1300 50  0001 C CNN
+	1    5750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 2 1 60B7EF7D
+P 5750 1850
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EF7D" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EF7D" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EF7D" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE61385/60B7EF7D" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/60B7EF7D" Ref="U1203"  Part="2" 
+F 0 "U1203" H 5700 1800 50  0000 C CNN
+F 1 "ADA4807-4" H 5900 1650 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 1950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 2050 50  0001 C CNN
+	2    5750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 3 1 60B7EF87
+P 5750 2550
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EF87" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EF87" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EF87" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE61385/60B7EF87" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/60B7EF87" Ref="U1203"  Part="3" 
+F 0 "U1203" H 5700 2550 50  0000 C CNN
+F 1 "ADA4807-4" H 5850 2350 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 2650 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 2750 50  0001 C CNN
+	3    5750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 4 1 60B7EF91
+P 5750 3300
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EF91" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EF91" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EF91" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE61385/60B7EF91" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/60B7EF91" Ref="U1203"  Part="4" 
+F 0 "U1203" H 5700 3300 50  0000 C CNN
+F 1 "ADA4807-4" H 5850 3100 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 3400 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 3500 50  0001 C CNN
+	4    5750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1200 5250 1200
+Wire Wire Line
+	5250 1200 5250 1400
+Wire Wire Line
+	5250 1400 6150 1400
+Wire Wire Line
+	6150 1400 6150 1100
+Wire Wire Line
+	6150 1100 6050 1100
+Wire Wire Line
+	5450 1950 5250 1950
+Wire Wire Line
+	5250 1950 5250 2150
+Wire Wire Line
+	5450 2650 5250 2650
+Wire Wire Line
+	5250 2650 5250 2850
+Wire Wire Line
+	5250 2850 6150 2850
+Wire Wire Line
+	6150 2850 6150 2550
+Wire Wire Line
+	6150 2550 6050 2550
+Wire Wire Line
+	5450 3400 5300 3400
+Wire Wire Line
+	5300 3400 5300 3650
+Wire Wire Line
+	5300 3650 6150 3650
+Wire Wire Line
+	6150 3650 6150 3300
+Wire Wire Line
+	6150 3300 6050 3300
+Wire Notes Line
+	4550 700  6650 700 
+Wire Notes Line
+	6650 700  6650 3750
+Wire Notes Line
+	6650 3750 4550 3750
+Wire Notes Line
+	4550 3750 4550 700 
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 1 1 60B7EFB7
+P 5750 4900
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EFB7" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EFB7" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EFB7" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60B7EFB7" Ref="U?"  Part="1" 
+AR Path="/5E1FF6A4/60B7EFB7" Ref="U1204"  Part="1" 
+F 0 "U1204" H 5700 4900 50  0000 C CNN
+F 1 "ADA4807-4" H 5750 5176 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 5000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 5100 50  0001 C CNN
+	1    5750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 2 1 60B7EFC1
+P 5750 5650
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EFC1" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EFC1" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EFC1" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/5DE61385/60B7EFC1" Ref="U?"  Part="2" 
+AR Path="/5E1FF6A4/60B7EFC1" Ref="U1204"  Part="2" 
+F 0 "U1204" H 5750 5650 50  0000 C CNN
+F 1 "ADA4807-4" H 5750 5926 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 5750 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 5850 50  0001 C CNN
+	2    5750 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 3 1 60B7EFCB
+P 5750 6350
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EFCB" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EFCB" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EFCB" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/5DE61385/60B7EFCB" Ref="U?"  Part="3" 
+AR Path="/5E1FF6A4/60B7EFCB" Ref="U1204"  Part="3" 
+F 0 "U1204" H 5700 6350 50  0000 C CNN
+F 1 "ADA4807-4" H 5750 6626 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 6450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 6550 50  0001 C CNN
+	3    5750 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 4 1 60B7EFD5
+P 5750 7100
+AR Path="/5E1FF6A4/5DE0DE0F/60B7EFD5" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE60F5A/60B7EFD5" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE6106D/60B7EFD5" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/5DE61385/60B7EFD5" Ref="U?"  Part="4" 
+AR Path="/5E1FF6A4/60B7EFD5" Ref="U1204"  Part="4" 
+F 0 "U1204" H 5700 7050 50  0000 C CNN
+F 1 "ADA4807-4" H 5750 7376 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 7200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5800 7300 50  0001 C CNN
+	4    5750 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5000 5250 5000
+Wire Wire Line
+	5250 5000 5250 5200
+Wire Wire Line
+	5250 5200 6150 5200
+Wire Wire Line
+	6150 5200 6150 4900
+Wire Wire Line
+	6150 4900 6050 4900
+Wire Wire Line
+	5450 5750 5250 5750
+Wire Wire Line
+	5250 5750 5250 5950
+Wire Wire Line
+	5450 6450 5250 6450
+Wire Wire Line
+	5250 6450 5250 6650
+Wire Wire Line
+	5250 6650 6150 6650
+Wire Wire Line
+	6150 6650 6150 6350
+Wire Wire Line
+	6150 6350 6050 6350
+Wire Wire Line
+	5450 7200 5300 7200
+Wire Wire Line
+	5300 7200 5300 7450
+Wire Wire Line
+	5300 7450 6150 7450
+Wire Wire Line
+	6150 7450 6150 7100
+Wire Wire Line
+	6150 7100 6050 7100
+Wire Wire Line
+	4750 5550 5450 5550
+Wire Wire Line
+	4750 6250 5450 6250
+Wire Notes Line
+	4550 4500 6650 4500
+Wire Notes Line
+	6650 4600 6650 7650
+Wire Notes Line
+	6650 7550 4550 7550
+Wire Notes Line
+	4550 7550 4550 4500
+Wire Wire Line
+	9700 950  9950 950 
+Connection ~ 9700 950 
+Wire Wire Line
+	9700 950  9700 850 
+Wire Wire Line
+	9700 1200 9950 1200
+Wire Wire Line
+	9700 1200 9700 950 
+Wire Wire Line
+	10350 950  10350 1200
+Connection ~ 10350 1200
+$Comp
+L Device:C_Small C?
+U 1 1 60BA553E
+P 10050 1200
+AR Path="/5E1FF6A4/5DE0DE0F/60BA553E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA553E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BA553E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BA553E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BA553E" Ref="C1210"  Part="1" 
+F 0 "C1210" V 10200 1200 50  0000 C CNN
+F 1 "10uF" V 10150 1050 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 10050 1200 50  0001 C CNN
+F 3 "~" H 10050 1200 50  0001 C CNN
+	1    10050 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 1200 10350 1200
+$Comp
+L Device:CP_Small C?
+U 1 1 60BA5549
+P 10050 950
+AR Path="/5E1FF6A4/5DE0DE0F/60BA5549" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA5549" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BA5549" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BA5549" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BA5549" Ref="C1209"  Part="1" 
+F 0 "C1209" V 10000 850 50  0000 C CNN
+F 1 "0.1uF" V 10184 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10050 950 50  0001 C CNN
+F 3 "~" H 10050 950 50  0001 C CNN
+	1    10050 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10150 950  10350 950 
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 5 1 60BA5554
+P 9800 1850
+AR Path="/5E1FF6A4/5DE0DE0F/60BA5554" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA5554" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE6106D/60BA5554" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE61385/60BA5554" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/60BA5554" Ref="U1203"  Part="5" 
+F 0 "U1203" H 9758 1896 50  0000 L CNN
+F 1 "ADA4807-4" H 9758 1805 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 9750 1950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9850 2050 50  0001 C CNN
+	5    9800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1550 9700 1200
+Connection ~ 9700 1200
+$Comp
+L power:-12VA #PWR?
+U 1 1 60BA5560
+P 9700 3000
+AR Path="/5E1FF6A4/5DE0DE0F/60BA5560" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA5560" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BA5560" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BA5560" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BA5560" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9700 2850 50  0001 C CNN
+F 1 "-12VA" H 9715 3173 50  0000 C CNN
+F 2 "" H 9700 3000 50  0001 C CNN
+F 3 "" H 9700 3000 50  0001 C CNN
+	1    9700 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12VA #PWR?
+U 1 1 60BA556A
+P 9700 850
+AR Path="/5E1FF6A4/5DE0DE0F/60BA556A" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA556A" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BA556A" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BA556A" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BA556A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9700 700 50  0001 C CNN
+F 1 "+12VA" H 9715 1023 50  0000 C CNN
+F 2 "" H 9700 850 50  0001 C CNN
+F 3 "" H 9700 850 50  0001 C CNN
+	1    9700 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2600 9700 2600
+Wire Wire Line
+	9950 2250 9700 2250
+Wire Wire Line
+	10150 2600 10350 2600
+$Comp
+L Device:CP_Small C?
+U 1 1 60BA5577
+P 10050 2600
+AR Path="/5E1FF6A4/5DE0DE0F/60BA5577" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA5577" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BA5577" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BA5577" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BA5577" Ref="C1212"  Part="1" 
+F 0 "C1212" V 10000 2450 50  0000 C CNN
+F 1 "10uF" V 9950 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 10050 2600 50  0001 C CNN
+F 3 "~" H 10050 2600 50  0001 C CNN
+	1    10050 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60BA5581
+P 10050 2250
+AR Path="/5E1FF6A4/5DE0DE0F/60BA5581" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA5581" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BA5581" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BA5581" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BA5581" Ref="C1211"  Part="1" 
+F 0 "C1211" V 10100 2350 50  0000 C CNN
+F 1 "0.1uF" V 9912 2250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10050 2250 50  0001 C CNN
+F 3 "~" H 10050 2250 50  0001 C CNN
+	1    10050 2250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10350 2600 10350 2250
+Connection ~ 10350 2600
+Wire Wire Line
+	10350 2250 10150 2250
+Wire Wire Line
+	10350 3000 10350 2600
+$Comp
+L power:GNDA #PWR?
+U 1 1 60BA558F
+P 10350 3000
+AR Path="/5E1FF6A4/5DE0DE0F/60BA558F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BA558F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BA558F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BA558F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BA558F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10350 2750 50  0001 C CNN
+F 1 "GNDA" H 10355 2827 50  0000 C CNN
+F 2 "" H 10350 3000 50  0001 C CNN
+F 3 "" H 10350 3000 50  0001 C CNN
+	1    10350 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2150 9700 2250
+Connection ~ 9700 2250
+Wire Wire Line
+	9700 2250 9700 2600
+Connection ~ 9700 2600
+Wire Wire Line
+	9700 2600 9700 3000
+Wire Wire Line
+	10350 1200 10350 2250
+Connection ~ 10350 2250
+Wire Notes Line
+	10550 550  9450 550 
+Wire Notes Line
+	9450 550  9450 3450
+Wire Notes Line
+	9450 3450 10550 3450
+Wire Notes Line
+	10550 550  10550 3450
+Wire Wire Line
+	7800 3950 8050 3950
+Connection ~ 7800 3950
+Wire Wire Line
+	7800 3950 7800 3850
+Wire Wire Line
+	7800 4200 8050 4200
+Wire Wire Line
+	7800 4200 7800 3950
+Wire Wire Line
+	8450 3950 8450 4200
+Connection ~ 8450 4200
+$Comp
+L Device:C_Small C?
+U 1 1 60BAEC73
+P 8150 4200
+AR Path="/5E1FF6A4/5DE0DE0F/60BAEC73" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAEC73" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAEC73" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAEC73" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAEC73" Ref="C1206"  Part="1" 
+F 0 "C1206" V 8300 4200 50  0000 C CNN
+F 1 "10uF" V 8250 4050 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8150 4200 50  0001 C CNN
+F 3 "~" H 8150 4200 50  0001 C CNN
+	1    8150 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 4200 8450 4200
+$Comp
+L Device:CP_Small C?
+U 1 1 60BAEC7E
+P 8150 3950
+AR Path="/5E1FF6A4/5DE0DE0F/60BAEC7E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAEC7E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAEC7E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAEC7E" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAEC7E" Ref="C1205"  Part="1" 
+F 0 "C1205" V 8100 3850 50  0000 C CNN
+F 1 "0.1uF" V 8284 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8150 3950 50  0001 C CNN
+F 3 "~" H 8150 3950 50  0001 C CNN
+	1    8150 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8250 3950 8450 3950
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 5 1 60BAEC89
+P 7900 4850
+AR Path="/5E1FF6A4/5DE0DE0F/60BAEC89" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAEC89" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE6106D/60BAEC89" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE61385/60BAEC89" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/60BAEC89" Ref="U1202"  Part="5" 
+F 0 "U1202" H 7858 4896 50  0000 L CNN
+F 1 "ADA4807-4" H 7858 4805 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7850 4950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 7950 5050 50  0001 C CNN
+	5    7900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4550 7800 4200
+Connection ~ 7800 4200
+$Comp
+L power:-12VA #PWR?
+U 1 1 60BAEC95
+P 7800 6000
+AR Path="/5E1FF6A4/5DE0DE0F/60BAEC95" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAEC95" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAEC95" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAEC95" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BAEC95" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7800 5850 50  0001 C CNN
+F 1 "-12VA" H 7815 6173 50  0000 C CNN
+F 2 "" H 7800 6000 50  0001 C CNN
+F 3 "" H 7800 6000 50  0001 C CNN
+	1    7800 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12VA #PWR?
+U 1 1 60BAEC9F
+P 7800 3850
+AR Path="/5E1FF6A4/5DE0DE0F/60BAEC9F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAEC9F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAEC9F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAEC9F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BAEC9F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7800 3700 50  0001 C CNN
+F 1 "+12VA" H 7815 4023 50  0000 C CNN
+F 2 "" H 7800 3850 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5600 7800 5600
+Wire Wire Line
+	8050 5250 7800 5250
+Wire Wire Line
+	8250 5600 8450 5600
+$Comp
+L Device:CP_Small C?
+U 1 1 60BAECAC
+P 8150 5600
+AR Path="/5E1FF6A4/5DE0DE0F/60BAECAC" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAECAC" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAECAC" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAECAC" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAECAC" Ref="C1208"  Part="1" 
+F 0 "C1208" V 8100 5450 50  0000 C CNN
+F 1 "10uF" V 8050 5750 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8150 5600 50  0001 C CNN
+F 3 "~" H 8150 5600 50  0001 C CNN
+	1    8150 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60BAECB6
+P 8150 5250
+AR Path="/5E1FF6A4/5DE0DE0F/60BAECB6" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAECB6" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAECB6" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAECB6" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAECB6" Ref="C1207"  Part="1" 
+F 0 "C1207" V 8200 5350 50  0000 C CNN
+F 1 "0.1uF" V 8012 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8150 5250 50  0001 C CNN
+F 3 "~" H 8150 5250 50  0001 C CNN
+	1    8150 5250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8450 5600 8450 5250
+Connection ~ 8450 5600
+Wire Wire Line
+	8450 5250 8250 5250
+Wire Wire Line
+	8450 6000 8450 5600
+$Comp
+L power:GNDA #PWR?
+U 1 1 60BAECC4
+P 8450 6000
+AR Path="/5E1FF6A4/5DE0DE0F/60BAECC4" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAECC4" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAECC4" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAECC4" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BAECC4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 5750 50  0001 C CNN
+F 1 "GNDA" H 8455 5827 50  0000 C CNN
+F 2 "" H 8450 6000 50  0001 C CNN
+F 3 "" H 8450 6000 50  0001 C CNN
+	1    8450 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5150 7800 5250
+Connection ~ 7800 5250
+Wire Wire Line
+	7800 5250 7800 5600
+Connection ~ 7800 5600
+Wire Wire Line
+	7800 5600 7800 6000
+Wire Wire Line
+	8450 4200 8450 5250
+Connection ~ 8450 5250
+Wire Notes Line
+	8650 3550 7550 3550
+Wire Notes Line
+	7550 3550 7550 6450
+Wire Notes Line
+	7550 6450 8650 6450
+Wire Notes Line
+	8650 3550 8650 6450
+Wire Wire Line
+	9700 3950 9950 3950
+Connection ~ 9700 3950
+Wire Wire Line
+	9700 3950 9700 3850
+Wire Wire Line
+	9700 4200 9950 4200
+Wire Wire Line
+	9700 4200 9700 3950
+Wire Wire Line
+	10350 3950 10350 4200
+Connection ~ 10350 4200
+$Comp
+L Device:C_Small C?
+U 1 1 60BAECE0
+P 10050 4200
+AR Path="/5E1FF6A4/5DE0DE0F/60BAECE0" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAECE0" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAECE0" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAECE0" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAECE0" Ref="C1214"  Part="1" 
+F 0 "C1214" V 10200 4200 50  0000 C CNN
+F 1 "10uF" V 10150 4050 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 10050 4200 50  0001 C CNN
+F 3 "~" H 10050 4200 50  0001 C CNN
+	1    10050 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 4200 10350 4200
+$Comp
+L Device:CP_Small C?
+U 1 1 60BAECEB
+P 10050 3950
+AR Path="/5E1FF6A4/5DE0DE0F/60BAECEB" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAECEB" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAECEB" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAECEB" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAECEB" Ref="C1213"  Part="1" 
+F 0 "C1213" V 10000 3850 50  0000 C CNN
+F 1 "0.1uF" V 10184 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10050 3950 50  0001 C CNN
+F 3 "~" H 10050 3950 50  0001 C CNN
+	1    10050 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10150 3950 10350 3950
+$Comp
+L Amplifier_Operational:ADA4807-4 U?
+U 5 1 60BAECF6
+P 9800 4850
+AR Path="/5E1FF6A4/5DE0DE0F/60BAECF6" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAECF6" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE6106D/60BAECF6" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/5DE61385/60BAECF6" Ref="U?"  Part="5" 
+AR Path="/5E1FF6A4/60BAECF6" Ref="U1204"  Part="5" 
+F 0 "U1204" H 9758 4896 50  0000 L CNN
+F 1 "ADA4807-4" H 9758 4805 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 9750 4950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9850 5050 50  0001 C CNN
+	5    9800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4550 9700 4200
+Connection ~ 9700 4200
+$Comp
+L power:-12VA #PWR?
+U 1 1 60BAED02
+P 9700 6000
+AR Path="/5E1FF6A4/5DE0DE0F/60BAED02" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAED02" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAED02" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAED02" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BAED02" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9700 5850 50  0001 C CNN
+F 1 "-12VA" H 9715 6173 50  0000 C CNN
+F 2 "" H 9700 6000 50  0001 C CNN
+F 3 "" H 9700 6000 50  0001 C CNN
+	1    9700 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12VA #PWR?
+U 1 1 60BAED0C
+P 9700 3850
+AR Path="/5E1FF6A4/5DE0DE0F/60BAED0C" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAED0C" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAED0C" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAED0C" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BAED0C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9700 3700 50  0001 C CNN
+F 1 "+12VA" H 9715 4023 50  0000 C CNN
+F 2 "" H 9700 3850 50  0001 C CNN
+F 3 "" H 9700 3850 50  0001 C CNN
+	1    9700 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5600 9700 5600
+Wire Wire Line
+	9950 5250 9700 5250
+Wire Wire Line
+	10150 5600 10350 5600
+$Comp
+L Device:CP_Small C?
+U 1 1 60BAED19
+P 10050 5600
+AR Path="/5E1FF6A4/5DE0DE0F/60BAED19" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAED19" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAED19" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAED19" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAED19" Ref="C1216"  Part="1" 
+F 0 "C1216" V 10000 5450 50  0000 C CNN
+F 1 "10uF" V 9950 5750 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 10050 5600 50  0001 C CNN
+F 3 "~" H 10050 5600 50  0001 C CNN
+	1    10050 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60BAED23
+P 10050 5250
+AR Path="/5E1FF6A4/5DE0DE0F/60BAED23" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAED23" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAED23" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAED23" Ref="C?"  Part="1" 
+AR Path="/5E1FF6A4/60BAED23" Ref="C1215"  Part="1" 
+F 0 "C1215" V 10100 5350 50  0000 C CNN
+F 1 "0.1uF" V 9912 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10050 5250 50  0001 C CNN
+F 3 "~" H 10050 5250 50  0001 C CNN
+	1    10050 5250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10350 5600 10350 5250
+Connection ~ 10350 5600
+Wire Wire Line
+	10350 5250 10150 5250
+Wire Wire Line
+	10350 6000 10350 5600
+$Comp
+L power:GNDA #PWR?
+U 1 1 60BAED31
+P 10350 6000
+AR Path="/5E1FF6A4/5DE0DE0F/60BAED31" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE60F5A/60BAED31" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE6106D/60BAED31" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/5DE61385/60BAED31" Ref="#PWR?"  Part="1" 
+AR Path="/5E1FF6A4/60BAED31" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10350 5750 50  0001 C CNN
+F 1 "GNDA" H 10355 5827 50  0000 C CNN
+F 2 "" H 10350 6000 50  0001 C CNN
+F 3 "" H 10350 6000 50  0001 C CNN
+	1    10350 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 5150 9700 5250
+Connection ~ 9700 5250
+Wire Wire Line
+	9700 5250 9700 5600
+Connection ~ 9700 5600
+Wire Wire Line
+	9700 5600 9700 6000
+Wire Wire Line
+	10350 4200 10350 5250
+Connection ~ 10350 5250
+Wire Notes Line
+	10550 3550 9450 3550
+Wire Notes Line
+	9450 3550 9450 6450
+Wire Notes Line
+	9450 6450 10550 6450
+Wire Notes Line
+	10550 6450 10550 3550
+Wire Wire Line
+	6750 2000 6500 2000
+Wire Wire Line
+	6500 2000 6500 1100
+Wire Wire Line
+	6500 1100 6150 1100
+Connection ~ 6150 1100
+Wire Wire Line
+	6750 2150 6300 2150
+Wire Wire Line
+	6750 2300 6150 2300
+Wire Wire Line
+	6150 2300 6150 2550
+Connection ~ 6150 2550
+Wire Wire Line
+	6750 2450 6500 2450
+Wire Wire Line
+	6500 2450 6500 3650
+Wire Wire Line
+	6500 3650 6150 3650
+Connection ~ 6150 3650
+Wire Wire Line
+	4500 3200 4500 2450
+Wire Wire Line
+	4500 2450 4450 2450
+Wire Wire Line
+	4500 3200 5450 3200
+Wire Wire Line
+	4600 2450 4600 2300
+Wire Wire Line
+	4600 2300 4450 2300
+Wire Wire Line
+	4600 2450 5450 2450
+Wire Wire Line
+	4600 1750 4600 2150
+Wire Wire Line
+	4600 2150 4450 2150
+Wire Wire Line
+	4600 1750 5450 1750
+Wire Wire Line
+	4450 2000 4500 2000
+Wire Wire Line
+	4500 2000 4500 1000
+Wire Wire Line
+	4500 1000 5450 1000
+Wire Wire Line
+	3450 2000 3150 2000
+Wire Wire Line
+	3150 2000 3150 1100
+Wire Wire Line
+	3150 1100 2800 1100
+Connection ~ 2800 1100
+Wire Wire Line
+	3450 2300 2800 2300
+Wire Wire Line
+	2800 2300 2800 2550
+Connection ~ 2800 2550
+Wire Wire Line
+	3450 2450 3100 2450
+Wire Wire Line
+	3100 2450 3100 3650
+Wire Wire Line
+	3100 3650 2800 3650
+Connection ~ 2800 3650
+Wire Wire Line
+	1150 3200 1150 2350
+Wire Wire Line
+	1150 2350 1100 2350
+Wire Wire Line
+	1150 3200 2100 3200
+Wire Wire Line
+	1250 2450 1250 2200
+Wire Wire Line
+	1250 2200 1100 2200
+Wire Wire Line
+	1250 2450 2100 2450
+Wire Wire Line
+	1100 2050 1250 2050
+Wire Wire Line
+	1250 2050 1250 1750
+Wire Wire Line
+	1250 1750 2100 1750
+Wire Wire Line
+	1150 1000 1150 1900
+Wire Wire Line
+	1150 1900 1100 1900
+Wire Wire Line
+	1150 1000 2100 1000
+Wire Wire Line
+	6750 5800 6500 5800
+Wire Wire Line
+	6500 5800 6500 4900
+Wire Wire Line
+	6500 4900 6150 4900
+Connection ~ 6150 4900
+Wire Wire Line
+	6750 6100 6150 6100
+Wire Wire Line
+	6150 6100 6150 6350
+Connection ~ 6150 6350
+Wire Wire Line
+	6750 6250 6500 6250
+Wire Wire Line
+	6500 6250 6500 7100
+Wire Wire Line
+	6500 7100 6150 7100
+Connection ~ 6150 7100
+Wire Wire Line
+	4600 7000 4600 6250
+Wire Wire Line
+	4600 6250 4500 6250
+Wire Wire Line
+	4600 7000 5450 7000
+Wire Wire Line
+	4750 6250 4750 6100
+Wire Wire Line
+	4750 6100 4500 6100
+Wire Wire Line
+	4500 5950 4750 5950
+Wire Wire Line
+	4750 5950 4750 5550
+Wire Wire Line
+	4600 4800 4600 5800
+Wire Wire Line
+	4600 5800 4500 5800
+Wire Wire Line
+	4600 4800 5450 4800
+Wire Wire Line
+	3200 5750 3200 4900
+Wire Wire Line
+	3200 4900 2850 4900
+Connection ~ 2850 4900
+Wire Wire Line
+	1300 4800 1300 5800
+Wire Wire Line
+	1300 5800 1200 5800
+Wire Wire Line
+	1300 4800 2150 4800
+Wire Wire Line
+	1200 5950 1350 5950
+Wire Wire Line
+	1350 5950 1350 5550
+Wire Wire Line
+	1350 5550 2150 5550
+Wire Wire Line
+	1350 6250 1350 6100
+Wire Wire Line
+	1350 6100 1200 6100
+Wire Wire Line
+	1350 6250 2150 6250
+Wire Wire Line
+	1300 7000 1300 6250
+Wire Wire Line
+	1300 6250 1200 6250
+Wire Wire Line
+	1300 7000 2150 7000
+Wire Wire Line
+	2850 7100 3200 7100
+Wire Wire Line
+	3200 7100 3200 6200
+Wire Wire Line
+	3200 6200 3450 6200
+Connection ~ 2850 7100
+Wire Wire Line
+	2850 6350 2850 6050
+Wire Wire Line
+	2850 6050 3450 6050
+Connection ~ 2850 6350
+Wire Wire Line
+	3450 5900 3000 5900
+Wire Wire Line
+	3200 5750 3450 5750
+Wire Wire Line
+	3000 5900 3000 5650
+Wire Wire Line
+	3000 5650 2850 5650
+Connection ~ 2850 5650
+Wire Wire Line
+	2850 5650 2850 5950
+Wire Wire Line
+	6350 5650 6350 5950
+Wire Wire Line
+	6350 5950 6750 5950
+Wire Wire Line
+	6150 5650 6350 5650
+Wire Wire Line
+	6150 5650 6050 5650
+Connection ~ 6150 5650
+Wire Wire Line
+	5250 5950 6150 5950
+Wire Wire Line
+	6150 5950 6150 5650
+Wire Wire Line
+	6300 1850 6300 2150
+Wire Wire Line
+	6150 1850 6300 1850
+Wire Wire Line
+	6150 1850 6050 1850
+Connection ~ 6150 1850
+Wire Wire Line
+	5250 2150 6150 2150
+Wire Wire Line
+	6150 2150 6150 1850
+Wire Wire Line
+	2800 1850 3000 1850
+Wire Wire Line
+	3000 1850 3000 2150
+Connection ~ 2800 1850
+Wire Wire Line
+	3000 2150 3450 2150
+Text Notes 2000 3900 0    50   ~ 10
+QUAD BUFFER 1
+Text Notes 2100 7700 0    50   ~ 10
+QUAD BUFFER 2
+Text Notes 5400 3900 0    50   ~ 10
+QUAD BUFFER 3
+Text Notes 5500 7700 0    50   ~ 10
+QUAD BUFFER 4
+Text Notes 7050 4600 1    50   ~ 10
+TO RX OUTPUT PANEL
+Text Notes 900  4500 1    50   ~ 10
+FROM CROSSPOINT \nSWITCH ARRAY CIRCUITS
+Text Notes 9650 6400 0    50   ~ 10
+QUAD BUFFER 4\nPOWER AND BYPASS
+Text Notes 7750 6400 0    50   ~ 10
+QUAD BUFFER 2\nPOWER AND BYPASS
+Text Notes 7750 3400 0    50   ~ 10
+QUAD BUFFER 1\nPOWER AND BYPASS
+Text Notes 9650 3400 0    50   ~ 10
+QUAD BUFFER 3\nPOWER AND BYPASS
+$EndSCHEMATC

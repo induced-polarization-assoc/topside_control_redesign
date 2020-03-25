@@ -1,0 +1,16 @@
+.MT8816AF1 :1 ;Analog & Digital Crosspoint ICs Pb Free 8x16 A/log Xpt small pkg
+QFP80P1200X1200X120-44N
+*STM IC
+*NGS
+*PLB 1="NC_1" 2="X14" 3="X15" 4="X6" 5="X7" 6="X8" 7="X9" 8="X10" 9="X11" 10="Y7" 11="NC_2" 12="VSS" 13="Y6" 14="STROBE" 15="Y5" 16="VEE" 17="Y4" 18="AX1" 19="AX2" 20="AY0" 21="AY1" 22="NC_3" 23="NC_4" 24="X13" 25="X12" 26="X5" 27="X4" 28="X3" 29="X2" 30="X1" 31="X0" 32="Y0" 33="NC_5" 34="CS" 35="Y1" 36="DATA" 37="Y2" 38="VDD" 39="Y3" 40="AY2" 41="NC_6" 42="RESET" 43="AX3" 44="AX0"
+*MXP 44
+*DFN MT8816AF1
+~!Mouser2 Part Number (-)
+~!Mouser2 Price/Stock (-)
+~!Manufacturer_Name (Microsemi Corporation)
+~!Manufacturer_Part_Number (MT8816AF1)
+~!Link Datasheet (http://www.microsemi.com/document-portal/doc_download/127038-mt8816-datasheet-sept11)
+~!Height (1.2mm)
+~!3D_Model (MT8816AF1)
+MT8816AF1
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 21.1!U 22.1!U 33.1!U 32.1!U 31.1!U 30.1!U 29.1!U 28.1!U 27.1!U 26.1!U 25.1!U 24.1!U 23.1!U 44.1!U 43.1!U 42.1!U 41.1!U 40.1!U 39.1!U 38.1!U 37.1!U 36.1!U 35.1!U 34.1!U 

@@ -1,0 +1,9 @@
+Manufacturer=Microsemi Corporation
+PartNumber=MT8816AF1
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat Packages
+PinCount=44
+Version=1.1
+Released=2019-09-02 09:59:50
+Downloaded=2019-11-23 19:38:24
+3D=Y

@@ -1,0 +1,372 @@
+EESchema Schematic File Version 4
+LIBS:ipa_cable_rx_routing_board_112319-cache
+EELAYER 29 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 8 12
+Title "Marine Induced Polarization Receiver (RX) Signal Routing Circuit"
+Date "2019-11-26"
+Rev "0.1"
+Comp "Induced Polarization Associates, LLC"
+Comment1 "Drafted by Joseph J. Radler"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LT3032 U701
+U 1 1 5DFC29C5
+P 5500 3000
+F 0 "U701" H 5300 3250 50  0000 C CNN
+F 1 "LT3032" H 5650 3250 50  0000 C CNN
+F 2 "Package_DFN_QFN:Linear_DE14MA" H 5500 3325 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3032ff.pdf" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LT3032 U701
+U 2 1 5DFC3563
+P 5500 5000
+F 0 "U701" H 5250 5250 50  0000 C CNN
+F 1 "LT3032" H 5650 5250 50  0000 C CNN
+F 2 "Package_DFN_QFN:Linear_DE14MA" H 5500 5325 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3032ff.pdf" H 5500 5000 50  0001 C CNN
+	2    5500 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DFC5BBB
+P 8100 4000
+F 0 "#PWR?" H 8100 3750 50  0001 C CNN
+F 1 "GNDA" H 8105 3827 50  0000 C CNN
+F 2 "" H 8100 4000 50  0001 C CNN
+F 3 "" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DFC6AE8
+P 4250 4100
+F 0 "#PWR?" H 4250 3850 50  0001 C CNN
+F 1 "GNDA" H 4255 3927 50  0000 C CNN
+F 2 "" H 4250 4100 50  0001 C CNN
+F 3 "" H 4250 4100 50  0001 C CNN
+	1    4250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C705
+U 1 1 5DFC95B5
+P 7100 3450
+F 0 "C705" H 7215 3496 50  0000 L CNN
+F 1 "10uF" H 7215 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 7100 3450 50  0001 C CNN
+F 3 "~" H 7100 3450 50  0001 C CNN
+	1    7100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C706
+U 1 1 5DFC9BB4
+P 7100 4500
+F 0 "C706" H 7215 4546 50  0000 L CNN
+F 1 "10uF" H 7215 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 7100 4500 50  0001 C CNN
+F 3 "~" H 7100 4500 50  0001 C CNN
+	1    7100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C701
+U 1 1 5DFCD44A
+P 4550 3400
+F 0 "C701" V 4600 3100 50  0000 L CNN
+F 1 "10uF" V 4500 3550 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 4550 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C702
+U 1 1 5DFCE072
+P 4550 4600
+F 0 "C702" V 4600 4250 50  0000 L CNN
+F 1 "10uF" V 4500 4800 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 4550 4600 50  0001 C CNN
+F 3 "~" H 4550 4600 50  0001 C CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C704
+U 1 1 5DFCFD18
+P 6100 4650
+F 0 "C704" V 6150 4350 50  0000 L CNN
+F 1 "0.01uF" V 6150 4700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 4500 50  0001 C CNN
+F 3 "~" H 6100 4650 50  0001 C CNN
+	1    6100 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R702
+U 1 1 5DFD064C
+P 6550 3700
+F 0 "R702" V 6650 3550 50  0000 L CNN
+F 1 "100K" V 6450 3600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6590 3690 50  0001 C CNN
+F 3 "~" H 6550 3700 50  0001 C CNN
+	1    6550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R701
+U 1 1 5DFD116F
+P 6550 3300
+F 0 "R701" V 6650 3150 50  0000 L CNN
+F 1 "473K" V 6450 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6590 3290 50  0001 C CNN
+F 3 "~" H 6550 3300 50  0001 C CNN
+	1    6550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R703
+U 1 1 5DFD164D
+P 6550 4300
+F 0 "R703" V 6650 4200 50  0000 L CNN
+F 1 "100K" V 6450 4250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6590 4290 50  0001 C CNN
+F 3 "~" H 6550 4300 50  0001 C CNN
+	1    6550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R704
+U 1 1 5DFD1A1F
+P 6550 4750
+F 0 "R704" V 6650 4650 50  0000 L CNN
+F 1 "310K" V 6450 4650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6590 4740 50  0001 C CNN
+F 3 "~" H 6550 4750 50  0001 C CNN
+	1    6550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3250 4550 2900
+Wire Wire Line
+	5100 4900 4750 4900
+Wire Wire Line
+	4750 4900 4750 5100
+Wire Wire Line
+	4750 5100 5100 5100
+Wire Wire Line
+	5100 2900 4800 2900
+Wire Wire Line
+	4800 2900 4800 3100
+Wire Wire Line
+	4800 3100 5100 3100
+Wire Wire Line
+	5500 3300 5500 4000
+Connection ~ 5500 4000
+Wire Wire Line
+	5500 4000 5500 4700
+Wire Wire Line
+	4550 4750 4550 5100
+$Comp
+L Device:C C703
+U 1 1 5DFCE77F
+P 6100 3300
+F 0 "C703" V 6150 3000 50  0000 L CNN
+F 1 "0.01uF" V 6050 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 3150 50  0001 C CNN
+F 3 "~" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2900 6100 2900
+Wire Wire Line
+	5900 3100 5900 3450
+Wire Wire Line
+	5900 3450 6100 3450
+Wire Wire Line
+	6100 3150 6100 2900
+Connection ~ 6100 2900
+Wire Wire Line
+	6100 2900 6550 2900
+Wire Wire Line
+	5500 4000 6550 4000
+Wire Wire Line
+	5900 5100 6100 5100
+Wire Wire Line
+	6550 3450 6550 3550
+Wire Wire Line
+	6550 3850 6550 4000
+Connection ~ 6550 4000
+Wire Wire Line
+	5900 5000 6350 5000
+Wire Wire Line
+	6350 5000 6350 4500
+Wire Wire Line
+	6350 4500 6550 4500
+Wire Wire Line
+	6550 4500 6550 4450
+Wire Wire Line
+	6550 4500 6550 4600
+Connection ~ 6550 4500
+Wire Wire Line
+	6550 4900 6550 5100
+Connection ~ 6550 5100
+Wire Wire Line
+	6550 5100 7100 5100
+Wire Wire Line
+	6550 4150 6550 4000
+Wire Wire Line
+	6100 4800 6100 5100
+Connection ~ 6100 5100
+Wire Wire Line
+	6100 5100 6550 5100
+Wire Wire Line
+	5900 4900 5900 4500
+Wire Wire Line
+	5900 4500 6100 4500
+Wire Wire Line
+	5900 3000 6350 3000
+Wire Wire Line
+	6350 3000 6350 3550
+Wire Wire Line
+	6350 3550 6550 3550
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 3150 6550 2900
+Connection ~ 6550 2900
+Wire Wire Line
+	6550 2900 7100 2900
+Wire Wire Line
+	7100 3300 7100 2900
+Connection ~ 7100 2900
+Wire Wire Line
+	7100 2900 7700 2900
+Wire Wire Line
+	7100 3600 7100 4000
+Connection ~ 7100 4000
+Wire Wire Line
+	7100 4000 7700 4000
+Wire Wire Line
+	7100 4650 7100 5100
+Connection ~ 7100 5100
+Wire Wire Line
+	7100 5100 7700 5100
+Wire Wire Line
+	6550 4000 7100 4000
+Wire Wire Line
+	7100 4000 7100 4350
+Wire Wire Line
+	4800 2900 4550 2900
+Connection ~ 4800 2900
+Connection ~ 4550 2900
+Wire Wire Line
+	4750 5100 4550 5100
+Connection ~ 4750 5100
+Wire Wire Line
+	5500 4000 4550 4000
+Wire Wire Line
+	4250 4000 4250 4100
+Wire Wire Line
+	4550 3550 4550 4000
+Connection ~ 4550 4000
+Wire Wire Line
+	4550 4000 4250 4000
+Wire Wire Line
+	4550 4000 4550 4450
+$Comp
+L power:+12VA #PWR?
+U 1 1 5F22454A
+P 4550 2900
+F 0 "#PWR?" H 4550 2750 50  0001 C CNN
+F 1 "+12VA" H 4565 3073 50  0000 C CNN
+F 2 "" H 4550 2900 50  0001 C CNN
+F 3 "" H 4550 2900 50  0001 C CNN
+	1    4550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12VA #PWR?
+U 1 1 5F224969
+P 4550 5100
+F 0 "#PWR?" H 4550 4950 50  0001 C CNN
+F 1 "-12VA" H 4565 5273 50  0000 C CNN
+F 2 "" H 4550 5100 50  0001 C CNN
+F 3 "" H 4550 5100 50  0001 C CNN
+	1    4550 5100
+	-1   0    0    1   
+$EndComp
+Connection ~ 4550 5100
+$Comp
+L Device:D_ALT D701
+U 1 1 5F3F48DB
+P 7700 3400
+F 0 "D701" V 7746 3321 50  0000 R CNN
+F 1 "1N4001" V 7655 3321 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7700 3400 50  0001 C CNN
+F 3 "~" H 7700 3400 50  0001 C CNN
+	1    7700 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_ALT D702
+U 1 1 5F3F58B5
+P 7700 4500
+F 0 "D702" V 7654 4579 50  0000 L CNN
+F 1 "1N4001" V 7745 4579 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7700 4500 50  0001 C CNN
+F 3 "~" H 7700 4500 50  0001 C CNN
+	1    7700 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 3250 7700 2900
+Connection ~ 7700 2900
+Wire Wire Line
+	7700 2900 8000 2900
+Wire Wire Line
+	7700 3550 7700 4000
+Connection ~ 7700 4000
+Wire Wire Line
+	7700 4000 8100 4000
+Wire Wire Line
+	7700 4000 7700 4350
+Wire Wire Line
+	7700 4650 7700 5100
+Connection ~ 7700 5100
+Wire Wire Line
+	7700 5100 8050 5100
+$Comp
+L power:+7VA #PWR?
+U 1 1 60F178F2
+P 8000 2900
+F 0 "#PWR?" H 8000 2775 50  0001 C CNN
+F 1 "+7VA" H 8015 3073 50  0000 C CNN
+F 2 "" H 8000 2900 50  0001 C CNN
+F 3 "" H 8000 2900 50  0001 C CNN
+	1    8000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 60FD1F37
+P 8050 5100
+F 0 "#PWR?" H 8050 5200 50  0001 C CNN
+F 1 "-5V" H 8065 5273 50  0000 C CNN
+F 2 "" H 8050 5100 50  0001 C CNN
+F 3 "" H 8050 5100 50  0001 C CNN
+	1    8050 5100
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

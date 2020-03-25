@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SKA15B-033
+D Mean Well SKA15B-12 Switched Mode DC/DC converter
+K DC/DC Converter, Converter, Power Supply
+F https://datasheet.octopart.com/SKA15B-15-Mean-Well-datasheet-13093267.pdf
+$ENDCMP
+#
+$CMP SKA15B-12
+D Mean Well SKA15B-12 Switched Mode DC/DC converter
+K DC/DC Converter, Converter, Power Supply
+F https://datasheet.octopart.com/SKA15B-15-Mean-Well-datasheet-13093267.pdf
+$ENDCMP
+#
+$CMP SKA15B-15
+D Mean Well SKA15B-12 Switched Mode DC/DC converter
+K DC/DC Converter, Converter, Power Supply
+F https://datasheet.octopart.com/SKA15B-15-Mean-Well-datasheet-13093267.pdf
+$ENDCMP
+#
+$CMP SKA15B_05
+D Mean Well SKA15B-12 Switched Mode DC/DC converter
+K DC/DC Converter, Converter, Power Supply
+F https://datasheet.octopart.com/SKA15B-15-Mean-Well-datasheet-13093267.pdf
+$ENDCMP
+#
+#End Doc Library
