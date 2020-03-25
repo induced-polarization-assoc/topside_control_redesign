@@ -1,4 +1,4 @@
-#!usr/bin bash
+#!/bin/bash
 # Use this script to configure your cloned repo for smooth operation with KiCAD
 # EDA software.
 # Maintainer:  jay@marine-ip.com
