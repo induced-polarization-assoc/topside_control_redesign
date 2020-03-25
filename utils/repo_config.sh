@@ -42,6 +42,14 @@ git config --global filter.kicad_sch.smudge cat
 echo "Done!"
 }
 
+function mac_check_appendgitignore () {
+if [[ "$OSTYPE" == "darwin"* ]]
+then
+   echo "Seems you're using a Mac. Adding to .gitignore again..."
+   echo "*.DS_Store" >> .gitignore
+fi
+}
+
 echo "Checking for .gitignore..."
 if [[ -w ./.gitignore ]]
 then
@@ -56,4 +64,5 @@ echo "Done!"
 
 check_gitattributes
 configure_clean_smudge
+mac_check_appendgitignore
 echo "Configuration for KiCAD Complete!"
