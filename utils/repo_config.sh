@@ -6,7 +6,7 @@
 # Reference:  https://jnavila.github.io/plotkicadsch/
 
 function add_text_to_gitignore () {
-echo "Adding KiCAD Ignore text to .gitignore...\n"
+echo "Adding KiCAD Ignore text to .gitignore..."
 
 echo "# Export Files for BOM" >> .gitignore
 echo "*.tsv" >> .gitignore
@@ -14,8 +14,7 @@ echo "*.csv" >> .gitignore
 echo "*.xml" >> .gitignore
 echo "# Backup Files from KiCAD" >> .gitignore
 echo "*.bak" >> .gitignore
-echo "*."
-
+echo "Done!"
 }
 
 function check_gitattributes () {
@@ -31,6 +30,7 @@ else
    echo "*.pro filter=kicad_project" >> .gitattributes
    echo "*.sch filter=kicad_sch" >> .gitattributes
 fi
+echo "Done!"
 }
 
 function configure_clean_smudge (){
@@ -39,6 +39,7 @@ git config --global filter.kicad_project.clean "sed -E 's/^update=.*$/update=Dat
 git config --global filter.kicad_project.smudge cat
 git config --global filter.kicad_sch.clean "sed -E 's/#(PWR|FLG)[0-9]+/#\1?/'"
 git config --global filter.kicad_sch.smudge cat
+echo "Done!"
 }
 
 echo "Checking for .gitignore..."
@@ -51,3 +52,8 @@ else
    touch .gitignore
    add_text_to_gitignore
 fi
+echo "Done!"
+
+check_gitattributes
+configure_clean_smudge
+echo "Configuration for KiCAD Complete!"
